@@ -3,7 +3,7 @@
     --ColorSecundario: white;
     --TipografiaSecundaria: "Bebas Neue", sans-serif;
     --Tipografia: font-family: "Open Sans", sans-serif;
-    ;
+    --Altura: 240px;
 }
 
 * {
@@ -15,20 +15,20 @@
 }
 
 main {
-    padding: 20px;
+    min-height: calc(100vh - var(--Altura));
 }
 
 header {
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
     padding: 10px 20px;
-
+    
     i {
-        color: white;
+        color: var(--ColorSecundario);
         padding: 5px 10px;
     }
 
@@ -40,12 +40,12 @@ header {
     }
 
     a {
-        color: white;
+        color: var(--ColorSecundario);
     }
 
     button {
-        background-color: white;
-        color: black;
+        background-color: var(--ColorSecundario);
+        color: var(--ColorPrincipal);
         padding: 5px 10px;
         border-radius: 5px;
         border: none;
@@ -65,8 +65,8 @@ header {
     }
 
     .comprarAhora {
-        background-color: rgb(0, 0, 0);
-        color: white;
+        background-color: var(--ColorPrincipal);
+        color: var(--ColorSecundario);
         padding: 10px 20px;
         border-radius: 5px;
         border: none;
@@ -88,17 +88,16 @@ header {
     }
 
     .etiqueta {
-        width: 100px;
+        width: 100%;
         height: 30px;
         display: flex;
         justify-content: center;
         position: absolute;
-        bottom: 10px;
-        right: 10px;
-        color: white;
+        bottom: 5px;
+        color: var(--ColorSecundario);
         padding: 5px 10px;
         border-radius: 5px;
-        background-color: black;
+        background-color: var(--ColorPrincipal);
         font-family: var(--TipografiaSecundaria);
 
     }
@@ -139,8 +138,8 @@ header {
         }
 
         .verProducto {
-            background-color: rgb(0, 0, 0);
-            color: rgb(246, 246, 246);
+            background-color: var(--ColorPrincipal);
+            color: var(--ColorSecundario);
             padding: 5px 10px;
             border-radius: 5px;
         }
@@ -156,8 +155,9 @@ header {
 }
 
 .beneficios {
-
+    background-color: var(--ColorSecundario);
     h2 {
+        padding: 20px;
         font-family: var(--TipografiaSecundaria);
         font-size: 30px;
         margin-bottom: 20px;
@@ -172,8 +172,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     gap: 50px;
-
     .beneficio {
         width: 25%;
         display: flex;
@@ -185,7 +185,7 @@ header {
         padding: 10px;
         width: 100%;
         font-size: 20px;
-        color: black;
+        color: var(--ColorPrincipal);
         margin-bottom: 10px;
         display: flex;
         justify-content: center;
@@ -210,8 +210,8 @@ header {
 footer {
     width: 100%;
     height: 100px;
-    background-color: black;
-    color: white;
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
     display: flex;
     justify-content: space-between;
     align-items: center;
