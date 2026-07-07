@@ -285,8 +285,8 @@ footer {
                 }
 
                 button {
-                    background-color: var(--ColorSecundario);
-                    color: var(--ColorPrincipal);
+                    background-color: red;
+                    color: var(--ColorSecundario);
                     padding: 5px 10px;
                     border-radius: 5px;
                 }
